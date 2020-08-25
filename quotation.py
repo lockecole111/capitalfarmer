@@ -128,7 +128,7 @@ def quota(code, quota_type='k', fuquan='', **kwargs):
     :return:
     """
     url = 'http://pdfm.eastmoney.com/EM_UBG_PDTI_Fast/api/js'
-    params = {'id': params_converter.symbol_code_2(code),
+    params = {'id': params_converter.symbol_code_3(code),
               'type': quota_type,
               'authorityType': fuquan,
               'rtntype': kwargs.get('rtntype', 5),
