@@ -33,5 +33,14 @@ class params_converter:
         elif code[-3:] == ".SZ":
             code = code[:6] + '0'
         return code
+    
+    @staticmethod
+    def symbol_code_3(code):
+        # 000001.SZ ==> 0000012
+        if code[-3:] == ".SH":
+            code = code[:6] + '1'
+        elif code[-3:] == ".SZ":
+            code = code[:6] + '2'
+        return code
 
 
